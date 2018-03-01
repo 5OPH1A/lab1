@@ -309,7 +309,7 @@ Exercise 11: Reimplement sum using fold_left, naming it sum_ho (for
 open List ;;
 
 let sum_ho (lst : int list) : int =
-  fold_left (fun x y -> x + 1) 0 lst ;;
+  fold_left (fun x y -> x + y) 0 lst ;;
 
 (*......................................................................
 Exercise 12: Reimplement prods using map.
