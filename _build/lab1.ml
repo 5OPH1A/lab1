@@ -306,17 +306,16 @@ END IMPORTANT NOTES
 Exercise 11: Reimplement sum using fold_left, naming it sum_ho (for
 "higher order").
 ......................................................................*)
-open List ;;
 
 let sum_ho (lst : int list) : int =
-  fold_left (fun x y -> x + 1) 0 lst ;;
+  failwith "sum_ho not implemented" ;;
 
 (*......................................................................
 Exercise 12: Reimplement prods using map.
 ......................................................................*)
 
 let prods_ho (lst : (int * int) list) : int list =
-  map (fun (x, y) -> x * y) lst ;;
+  failwith "prods_ho not implemented" ;;
 
 (*......................................................................
 Exercise 13: The OCaml List module provides, in addition to the map,
@@ -328,7 +327,7 @@ two lists to form the result list. Use map2 to reimplement zip.
 ......................................................................*)
 
 let zip_ho (x : int list) (y : int list) : (int * int) list =
-  map2 (fun x y -> (x, y)) x y;;
+  failwith "sum_ho not implemented" ;;
 
 (*......................................................................
 Exercise 14: Define a function evens, using these higher-order
@@ -337,4 +336,4 @@ even numbers in its argument list.
 ......................................................................*)
 
 let evens : int list -> int list =
-  filter (fun x -> x mod 2 = 0) ;;
+  fun _ -> failwith "evens not implemented" ;;
